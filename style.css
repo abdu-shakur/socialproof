@@ -1,0 +1,105 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    padding: 5%;
+    color: hsl(300, 43%, 22%);
+    background-image: url(images/bg-pattern-bottom-desktop.svg);
+}
+.head{
+    float: left;
+    width: 50%;
+}
+h1{
+    padding-bottom: 10px;
+}
+.review{
+    width: 40%;
+    float: right;
+    align-items: end;
+    text-align: end;
+}
+.review p{
+    width:max-content;
+    font-weight: bold;
+    font-size: small;
+    background-color: hsla(300, 43%, 22%, 0.2);
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.tp{
+    margin-left: 60px;
+}
+.sp{
+    margin-left: 30px;
+}
+.fp{
+    margin-right: 30px;
+}
+.main{
+    float: right;
+    display: flex;
+}
+.card{
+  background-color: hsl(300, 43%, 22%);
+  color: white;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 30px;
+  height: fit-content;  
+}
+.attribution{
+    float: right;
+}
+.content{
+    display: flex;
+}
+.content img{
+    width: 2rem;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+.content p{
+    font-size: small;
+}
+.card1{
+    margin-top: 20px;
+}
+.card2{
+    margin-top: 40px;
+}
+.card3{
+    margin-top: 60px;
+}
+.profile p{
+    color: hsl(333, 80%, 67%);
+}
+@media (max-width:600px) {
+    body{
+        background-image: url(images/bg-pattern-top-mobile.svg);
+    }
+    .head,.review,.card,.main{
+        width: 100%;
+        flex-direction: column;
+        margin: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+    .review p{
+        padding: 5%;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 10px;
+        text-align: center;
+        align-items: center;
+    }
+    .span{
+        display: block;
+    }
+    .head h1,.head p{
+        text-align: center;
+    }
+}
